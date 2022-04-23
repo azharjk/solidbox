@@ -1,5 +1,5 @@
 <header class="header">
-  <a href="">
+  <a routerLink="/">
     <h1 class="header__brand">Solidbox</h1>
   </a>
   <div class="search">
@@ -19,7 +19,7 @@
     <input class="search__control" type="text" placeholder="Search" />
   </div>
   <nav class="nav">
-    <a href="">
+    <a routerLink="/">
       <svg
         class="icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -81,3 +81,6 @@
     </a>
   </nav>
 </header>
+<main>
+  <router-outlet></router-outlet>
+</main>

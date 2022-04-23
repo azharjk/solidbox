@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  width: 50rem;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2.5rem;
+
+  margin-top: 1rem;
+}
+
+.left-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.widget {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__image {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+  }
+
+  &__info span {
+    display: block;
+  }
+}
+
+.feature-gap {
+  display: grid;
+  gap: .5rem;
+}
