@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExploreComponent } from './explore/explore.component';
+import { UploadComponent } from './upload/upload.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
       {
         path: 'explore',
         component: ExploreComponent
+      },
+      {
+        path: 'upload',
+        component: UploadComponent
       }
     ]
   }

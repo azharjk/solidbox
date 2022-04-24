@@ -8,6 +8,7 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { CardHeadComponent } from './card-head/card-head.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExploreComponent } from './explore/explore.component';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ExploreComponent } from './explore/explore.component';
     PostCardComponent,
     CardHeadComponent,
     ProfileComponent,
-    ExploreComponent
+    ExploreComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,

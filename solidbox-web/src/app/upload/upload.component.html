@@ -1,0 +1,6 @@
+<div class="container">
+  <div class="upload-container">
+    <input #inputFile type="file" accept="image/*" (change)="onFileChange($event)" hidden>
+    <button class="upload-container__action-button" (click)="onUpload()">Choose image to upload</button>
+  </div>
+</div>
