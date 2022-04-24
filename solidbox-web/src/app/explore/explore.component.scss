@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  width: 60rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  // NOTE: Do we have to use aspect-ratio?
+  & img {
+    aspect-ratio: 1 / 1;
+  }
+}

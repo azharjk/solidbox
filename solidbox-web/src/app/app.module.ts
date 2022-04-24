@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { CardHeadComponent } from './card-head/card-head.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ExploreComponent } from './explore/explore.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
     HomeComponent,
     PostCardComponent,
     CardHeadComponent,
-    ProfileComponent
+    ProfileComponent,
+    ExploreComponent
   ],
   imports: [
     BrowserModule,
