@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card-container {
+  width: 45rem;
+
+  display: grid;
+  gap: 5rem;
+}
+
+.profile-card-header {
+  display: flex;
+  gap: 5rem;
+
+  &__image {
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 50%;
+  }
+}
+
+.profile-card-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  // NOTE: Do we have to use aspect-ratio?
+  &__post {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.profile-info {
+  display: grid;
+  gap: 1.2rem;
+
+  padding: 1rem 0;
+}
+
+.profile-action {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  &__username {
+    margin: 0;
+
+    line-height: 1;
+    font-size: 1.7rem;
+    font-weight: normal;
+  }
+
+  &__button {
+    padding: .4rem;
+
+    border: 1px solid black;
+    border-radius: 4px;
+
+    background-color: transparent;
+    font-weight: bold;
+
+    cursor: pointer;
+  }
+}
+
+.profile-stat {
+  display: flex;
+  justify-content: space-between;
+}
