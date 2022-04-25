@@ -7,6 +7,7 @@ import { ExploreComponent } from './explore/explore.component';
 import { UploadComponent } from './upload/upload.component';
 import { LoginComponent } from './login/login.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   }
 ];
 
