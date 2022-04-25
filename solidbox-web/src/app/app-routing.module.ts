@@ -5,10 +5,13 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExploreComponent } from './explore/explore.component';
 import { UploadComponent } from './upload/upload.component';
+import { LoginComponent } from './login/login.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: MainLayoutComponent,
     children: [
       {
         path: '',
@@ -27,6 +30,10 @@ const routes: Routes = [
         component: UploadComponent
       }
     ]
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

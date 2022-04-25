@@ -9,6 +9,8 @@ import { CardHeadComponent } from './card-head/card-head.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExploreComponent } from './explore/explore.component';
 import { UploadComponent } from './upload/upload.component';
+import { LoginComponent } from './login/login.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { UploadComponent } from './upload/upload.component';
     CardHeadComponent,
     ProfileComponent,
     ExploreComponent,
-    UploadComponent
+    UploadComponent,
+    LoginComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
