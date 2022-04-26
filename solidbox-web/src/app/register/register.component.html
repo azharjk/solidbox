@@ -2,23 +2,51 @@
   <div class="card-form-container">
     <div class="card-form">
       <h1>Solidbox</h1>
-      <p class="register-text">Create an account to view photos from your friends</p>
-      <form class="form">
+      <p class="register-text">
+        Create an account to view photos from your friends
+      </p>
+      <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <div class="form-control mb-3">
           <label for="name">Name</label>
-          <input class="form-control__input" id="name" type="text" />
+          <input
+            [class.form-control__input--error]="isInputInvalid('name')"
+            class="form-control__input"
+            id="name"
+            type="text"
+            formControlName="name"
+          />
         </div>
         <div class="form-control mb-3">
           <label for="username">Username</label>
-          <input class="form-control__input" id="username" type="text" />
+          <input
+            [class.form-control__input--error]="isInputInvalid('username')"
+            class="form-control__input"
+            id="username"
+            type="text"
+            formControlName="username"
+          />
         </div>
         <div class="form-control">
           <label for="password">Password</label>
-          <input class="form-control__input" id="password" type="password" />
+          <input
+            [class.form-control__input--error]="isInputInvalid('password')"
+            class="form-control__input"
+            id="password"
+            type="password"
+            formControlName="password"
+          />
         </div>
-        <button class="form__submit">Register</button>
+        <button
+          [disabled]="registerForm.invalid"
+          class="form__submit"
+          [class.form__submit--disabled]="registerForm.invalid"
+        >
+          Register
+        </button>
       </form>
     </div>
-    <div class="card-form-footer">Have an account? <a routerLink="/login">Login</a></div>
+    <div class="card-form-footer">
+      Have an account? <a routerLink="/login">Login</a>
+    </div>
   </div>
 </div>

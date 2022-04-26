@@ -2,3 +2,13 @@
   font-size: 1.3rem;
   text-align: center;
 }
+
+.form-control__input--error {
+  border-color: red !important;
+  outline-color: red !important;
+}
+
+.form__submit--disabled {
+  background-color: darkblue !important;
+  cursor: default;
+}
